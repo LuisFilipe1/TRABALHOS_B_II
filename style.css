@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap");
+.light-theme {
+    background-color: darkgray;
+    color: #110e31; 
+}
+.dark-theme {
+    background-color: #110e31;
+    color: gray;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #110e31;
+}
+nav {
+    max-width: 1220px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Sarala", cursive;
+    font-size: 20px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+@keyframes enterAnimation {
+    0% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(100vw); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.troca-tema{
+    width: 30px;
+    height: 30px;
+    background-image: url('imagens/darkmode.png');
+    mix-blend-mode:multiply;
+    background-size: cover;
+    background-position: center;
+    border: #110e31;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+}
+.logo {
+    font-family: "Caveat", cursive;
+    font-size: 38px;
+    font-weight: 700;
+}
+header {
+    padding: 20px;
+    background-color: gray;
+}
+main {
+    border-top: 0.8px solid rgb(14, 14, 75);
+    font-family: "Sarala", cursive;
+    position: relative;
+    animation: enterAnimation 2s ease forwards;
+}
+.hero {
+    font-weight: 300;
+    max-width: 1220px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    gap: 100px;
+}
+.hero-title {
+    font-size: 48px;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+
+}
+.hero-img {
+    margin-top: 60px;
+    gap: 30px;
+    max-width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.social-medias {
+    margin-top: 48px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.title-social {
+    border-top: 0.4px solid rgb(14, 14, 75);
+    padding-top: 34px;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+footer {
+    color: #110e31;
+    margin-top: 20px;
+    border-top: 0.4px solid rgb(14, 14, 75);
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+}
+.ref {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Caveat", cursive;
+    font-size: 35px;
+    font-weight: 1000;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+#history{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    padding-top: 50px;
+}
+#history-ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+}
+#skills-list{
+    line-height: 35px;
+}
+#lang{
+    padding-top: 25px;
+    border-top: 0.4px solid rgb(14, 14, 75);
+    max-width: 500px;
+    margin-left: 70px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.ajuste{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imagens{
+    display: flex;
+    flex-direction: column;
+}
+.grid-container {
+    max-width: 1220px;
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+.grid-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:right;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
